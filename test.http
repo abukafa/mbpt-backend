@@ -37,10 +37,11 @@ Content-Type: application/json
 
 {
   "segment": "kids",
-  "text": "I work for my future",
+  "text": "Saya jadi lebih semangat kalau punya gambaran jelas tentang masa depan saya.",
   "motivation": "vision",
   "weight": 1,
-  "order": 1
+  "order": 1,
+  "locale": "id"
 }
 
 ### Update Question
@@ -60,7 +61,7 @@ GET http://localhost:3000/api/questions
 
 
 ### Get Question by ID
-GET http://localhost:3000/api/questions/4
+GET http://localhost:3000/api/questions/1
 
 
 ### Delete Question
