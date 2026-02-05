@@ -8,6 +8,8 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:5173',
+      'https://mbpt.jazacademy.id/',
+      'https://mbpt-frontend.vercel.app/',
       'https://mbpt-frontend-fy26n5rxk-abukafas-projects.vercel.app',
     ],
     credentials: true,
@@ -16,6 +18,6 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
   app.setGlobalPrefix('api');
 
-  await app.listen(process.env.PORT ?? 3000);
+  await app.listen(process.env.PORT ?? 8080);
 }
 bootstrap();
