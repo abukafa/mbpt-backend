@@ -6,12 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: [
-      'http://localhost:5173',
-      'https://mbpt.jazacademy.id/',
-      'https://mbpt-frontend.vercel.app/',
-      'https://mbpt-frontend-fy26n5rxk-abukafas-projects.vercel.app',
-    ],
+    origin: ['http://localhost:5173', 'https://mbpt.jazacademy.id/'],
     credentials: true,
   });
 
